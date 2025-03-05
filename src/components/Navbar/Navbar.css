@@ -1,0 +1,118 @@
+/* Navbar Container */
+.navbar {
+  background-color: #2874f0; /* Flipkart Blue */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Navbar Inner Content */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+/* Search Bar */
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #ff9f00;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+/* Navbar Icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+
+  .search-bar {
+    width: 90%;
+    max-width: none;
+    margin: 10px 0;
+  }
+
+  .nav-icons {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .nav-item {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+}

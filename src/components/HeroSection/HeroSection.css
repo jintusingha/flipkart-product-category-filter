@@ -1,0 +1,12 @@
+
+.hero-section {
+    width: 100%;
+    background-color: #f1f3f6;
+    padding: 1rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 0.5rem 0;
+    }
+  }
